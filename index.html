@@ -6,6 +6,8 @@
     <title>NYU Society</title>
 </head>
 <body>
+    <!-- Import JavaScript File -->
+    <script src="project_js.js"></script>
     <!-- Header with Society Name -->
     <header>
         <img src="nyuLogo.jpg" alt="NYU 로고" style="width: 150px; height: auto; margin-bottom: 10px;">
@@ -41,7 +43,12 @@
             <li><a href="Internship/I.html">인턴십 정보 모음 </a></li>
         </section>
 
-       
+        <!-- Search Section -->
+        <section>
+            <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
+            <input type="text" placeholder="게시판을 입력하세요!" id="search_input"><br>
+            <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
+        </section>
     </main>
 
     <!-- Footer -->
