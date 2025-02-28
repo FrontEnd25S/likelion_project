@@ -8,7 +8,7 @@
 <body>
     <h1><a href="../index.html">NYU Community</a></h1>
     </header>
-
+    <script src="../project_js.js"></script>
     <main>
         <h2>OPT 와 CPT에 대한 설명</h2>
         <p>인턴 신청 전 유학생은 꼭 보고 가자!</p>
@@ -18,5 +18,13 @@
         </ul>
         <a href="../index.html">← 메인으로 돌아가기</a>
     </main>
+
+    <section>
+        <h3>게시판 검색</h3>
+        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
+        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
+        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
+        <script src = "../search_press.js"></script>
+    </section>
 </body>
 </html>
