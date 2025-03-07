@@ -1,7 +1,7 @@
 let likes = 0;
-let likeButton = document.getElementById("like");
+let likeBtn = document.getElementById("like");
 
-likeButton.addEventListener("click", () => {
+likeBtn.addEventListener("click", () => {
   likes = likes === 0 ? 1 : 0;
-  likeButton.textContext = likes ? `👍 ${likes} Liked` : "👍 Like";
+  likeBtn.textContent = likes ? `👍 ${likes} Liked`: `👍 Like`;
 });
