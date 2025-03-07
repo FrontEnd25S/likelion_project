@@ -1,6 +1,6 @@
 let likes = 0;
-const likeButton = document.getElementByID("like");
-const likeCount = document.getElementByID("likeCount");
+let likeButton = document.getElementByID("like");
+let likeCount = document.getElementByID("likeCount");
 
 likeButton.addEventListner("click", () => {
   likes = likes === 0 ? 1 : 0;
