@@ -1,0 +1,35 @@
+
+43 lines (42 loc) · 1.36 KB
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raku</title>
+</head>
+<body>
+    <h1><a href="../housingInfo/hI.html">NYU Community</a></h1>
+
+    <main>
+        <h2>Brittany Hall</h2>
+        <ul>
+            <li>
+                <img src="oyako_don.jpg" alt="Oyako Don" width="200">
+                Oyako Don
+            </li>
+        </ul>
+        <h3>영업 시간</h3>
+        <ul>
+           <li>주소: Broadway와 East 10th Street의 코너에 위치</li>
+           <li>워싱턴 스퀘어 파크에서 약 0.3마일(0.5km) 거리로 캠퍼스와 가까움</li>
+           <li>약 579명의 1학년 학생들이 거주하며, 다양한 커뮤니티 활동 제공</li>
+           <li>장점: 최근 리노베이션으로 깨끗한 시설과 현대적 편의성 제공</li>
+           <li>단점: 교회 종소리가 들릴 수 있음, 식당이 없음</li> 
+
+        </ul>
+        <button id="like">👍</button>
+        <script src="../liked.js"></script><br>
+        <a href="../housingInfo/hI.html">← 메인으로 돌아가기</a>
+    </main>
+</body>
+</html>
