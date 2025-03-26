@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soothr</title>
+    <style>
+        #map-container {
+          opacity: 0;
+          transition: opacity 1.5s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <h1><a href="../goodFood/gF.html">NYU Community</a></h1>
@@ -36,7 +42,10 @@
             <li><strong>Sunday:</strong> Noon-3:30pm & 5pm-10pm</li>
         </ul>
         <h3>위치</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3509909265767!2d-73.98991662354446!3d40.73230167139051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25923d7bca4d1%3A0x5bbeae84d9924f22!2sSoothr!5e0!3m2!1sen!2sus!4v1742949877609!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3509909265767!2d-73.98991662354446!3d40.73230167139051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25923d7bca4d1%3A0x5bbeae84d9924f22!2sSoothr!5e0!3m2!1sen!2sus!4v1742949877609!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <script src="../fadein.js"></script>
         <button id="like">👍</button>
         <script src="../liked.js"></script><br>
         <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
