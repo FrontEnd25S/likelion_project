@@ -44,16 +44,7 @@
         <h3>위치</h3>
         <div id = "map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5806184413086!2d-74.00512442354466!3d40.72724787139136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2596cd01077a3%3A0xa97c11b20f1fe952!2sRaku!5e0!3m2!1sen!2sus!4v1742951332552!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              const mapContainer = document.getElementById("map-container");
-              const iframe = mapContainer.querySelector("iframe");
-        
-              iframe.onload = () => {
-                mapContainer.style.opacity = "1";
-              };
-            });
-        </script>
+        <script src="../fadein.js"></script>
         <button id="like">👍</button>
         <script src="../liked.js"></script><br>
         <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
