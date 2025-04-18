@@ -1,54 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soothr</title>
-    <style>
-        #map-container {
-          opacity: 0;
-          transition: opacity 1.5s ease-in-out;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soothr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    #map-container {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      margin-top: 20px;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    h2, h3 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../goodFood/gF.html">NYU Community</a></h1>
 
-    <main>
-        <h2>태국 음식</h2>
-        <p>추천 메뉴</p>
-        <ul>
-            <li>
-                <img src="koong_karee.jpg" alt="Koong Karee" width="200">
-                Koong Karee
-            </li>
-            <li>
-                <img src="shrimp-pad-thai.jpg" alt="Shrimp Pad Thai" width="200">
-                Shrimp Pad Thai
-            </li>
-            <li>
-                <img src="pad_si_ew.jpg" alt="Pad Si Ew" width="200">
-                Pad Si Ew
-            </li>
-        </ul>
-        <h3>영업 시간</h3>
-        <ul>
-            <li><strong>Monday:</strong> Noon-3:30pm & 5pm-10pm</li>
-            <li><strong>Tuesday:</strong> Noon-3:30pm & 5pm-10pm</li>
-            <li><strong>Wednesday:</strong> Noon-3:30pm & 5pm-10pm</li>
-            <li><strong>Thursday:</strong> Noon-3:30pm & 5pm-10pm</li>
-            <li><strong>Friday:</strong> Noon-3:30pm & 5pm-11pm</li>
-            <li><strong>Saturday:</strong> Noon-3:30pm & 5pm-11pm</li>
-            <li><strong>Sunday:</strong> Noon-3:30pm & 5pm-10pm</li>
-        </ul>
-        <h3>위치</h3>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3509909265767!2d-73.98991662354446!3d40.73230167139051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25923d7bca4d1%3A0x5bbeae84d9924f22!2sSoothr!5e0!3m2!1sen!2sus!4v1742949877609!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <script src="../map_fadein.js"></script>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Soothr - 태국 음식</h2>
+    <p>분위기 좋은 정통 태국 요리를 제공하는 인기 맛집입니다.</p>
+  </section>
+
+  <!-- Recommended Menu -->
+  <h2>추천 메뉴</h2>
+  <section class="info-section">
+    <div class="info-card">
+      <img src="koong_karee.jpg" alt="Koong Karee" />
+      <h3>Koong Karee</h3>
+    </div>
+    <div class="info-card">
+      <img src="shrimp-pad-thai.jpg" alt="Shrimp Pad Thai" />
+      <h3>Shrimp Pad Thai</h3>
+    </div>
+    <div class="info-card">
+      <img src="pad_si_ew.jpg" alt="Pad Si Ew" />
+      <h3>Pad Si Ew</h3>
+    </div>
+  </section>
+
+  <!-- Operating Hours -->
+  <h2>영업 시간</h2>
+  <section class="info-section">
+    <div class="info-card">
+      <ul style="list-style: none; padding: 0;">
+        <li><strong>Mon–Thu:</strong> 12:00–15:30 & 17:00–22:00</li>
+        <li><strong>Fri–Sat:</strong> 12:00–15:30 & 17:00–23:00</li>
+        <li><strong>Sunday:</strong> 12:00–15:30 & 17:00–22:00</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <h2>위치</h2>
+  <div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3509909265767!2d-73.98991662354446!3d40.73230167139051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25923d7bca4d1%3A0x5bbeae84d9924f22!2sSoothr!5e0!3m2!1sen!2sus!4v1742949877609!5m2!1sen!2sus"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <script src="../map_fadein.js"></script>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <p style="text-align: center;">
+    <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
+  </p>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

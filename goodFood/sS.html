@@ -1,54 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saigon Shack</title>
-    <style>
-        #map-container {
-          opacity: 0;
-          transition: opacity 1.5s ease-in-out;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saigon Shack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    #map-container {
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      margin-top: 20px;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    h2, h3 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../goodFood/gF.html">NYU Community</a></h1>
 
-    <main>
-        <h2>베트남 음식</h2>
-        <p>추천 메뉴</p>
-        <ul>
-            <li>
-                <img src="saigon_shack_pho.jpg" alt="Saigon Shack Pho" width="200">
-                Saigon Shack Phở
-            </li>
-            <li>
-                <img src="classic_beef_pho.jpg" alt="Classic Beef Pho" width="200">
-                Classic Beef Phở
-            </li>
-            <li>
-                <img src="shrimp_pho.jpg" alt="Shrimp Pho" width="200">
-                 Shrimp Pho
-            </li>
-        </ul>
-        <h3>영업 시간</h3>
-        <ul>
-            <li><strong>Monday:</strong> 11am-9pm</li>
-            <li><strong>Tuesday:</strong> 11am-9pm</li>
-            <li><strong>Wednesday:</strong> 11am-9pm</li>
-            <li><strong>Thursday:</strong> 11am-9pm</li>
-            <li><strong>Friday:</strong> 11am-9:30pm</li>
-            <li><strong>Saturday:</strong> 11am-9:30pm</li>
-            <li><strong>Sunday:</strong> 11am-9pm</li>
-        </ul>
-        <h3>위치</h3>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.469710625318!2d-74.00319992354459!3d40.72968887139096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25992279cb0a7%3A0x47c6705638de9109!2sSaigon%20Shack!5e0!3m2!1sen!2sus!4v1742949801829!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <script src="../map_fadein.js"></script>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Saigon Shack - 베트남 음식</h2>
+    <p>가성비 좋은 맛있는 쌀국수로 학생들에게 인기 많은 베트남 음식점입니다.</p>
+  </section>
+
+  <!-- Recommended Menu -->
+  <h2>추천 메뉴</h2>
+  <section class="info-section">
+    <div class="info-card">
+      <img src="saigon_shack_pho.jpg" alt="Saigon Shack Pho" />
+      <h3>Saigon Shack Phở</h3>
+    </div>
+    <div class="info-card">
+      <img src="classic_beef_pho.jpg" alt="Classic Beef Pho" />
+      <h3>Classic Beef Phở</h3>
+    </div>
+    <div class="info-card">
+      <img src="shrimp_pho.jpg" alt="Shrimp Pho" />
+      <h3>Shrimp Phở</h3>
+    </div>
+  </section>
+
+  <!-- Operating Hours -->
+  <h2>영업 시간</h2>
+  <section class="info-section">
+    <div class="info-card">
+      <ul style="list-style: none; padding: 0;">
+        <li><strong>Monday–Thursday:</strong> 11:00–21:00</li>
+        <li><strong>Friday–Saturday:</strong> 11:00–21:30</li>
+        <li><strong>Sunday:</strong> 11:00–21:00</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <h2>위치</h2>
+  <div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.469710625318!2d-74.00319992354459!3d40.72968887139096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25992279cb0a7%3A0x47c6705638de9109!2sSaigon%20Shack!5e0!3m2!1sen!2sus!4v1742949801829!5m2!1sen!2sus"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <script src="../map_fadein.js"></script>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <p style="text-align: center;">
+    <a href="../goodFood/gF.html">← 메인으로 돌아가기</a>
+  </p>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

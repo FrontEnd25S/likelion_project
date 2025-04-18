@@ -105,3 +105,26 @@ footer {
     bottom: 0;
 }
 
+header img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #hero {
+    background-image: url('../images/nyu_wash_square.jpg'); /* your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #d2b4de;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+  

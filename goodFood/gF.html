@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>학교 주변 맛집</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학교 주변 맛집</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    </header>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>학교 주변 맛집</h2>
-        <p>금강산도 식후경!</p>
-        <ul>
-            <li><a href="../goodFood/sS.html">Saigon Shack</a></li>
-            <li><a href="../goodFood/r.html">Raku</a></li>
-            <li><a href="../goodFood/s.html">Soothr</a></li>
-            <li><a href="../goodFood/yC.html"> Yum Cha</a></li>
-        </ul>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="width: 150px; height: auto; margin-bottom: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <section id="hero">
+    <h2>학교 주변 맛집</h2>
+    <p>금강산도 식후경!</p>
+  </section>
+
+  <section class="info-section">
+    <div class="info-card">
+      <h3>Saigon Shack</h3>
+      <a href="../goodFood/sS.html">자세히 보기</a>
+    </div>
+    <div class="info-card">
+      <h3>Raku</h3>
+      <a href="../goodFood/r.html">자세히 보기</a>
+    </div>
+    <div class="info-card">
+      <h3>Soothr</h3>
+      <a href="../goodFood/s.html">자세히 보기</a>
+    </div>
+    <div class="info-card">
+      <h3>Yum Cha</h3>
+      <a href="../goodFood/yC.html">자세히 보기</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
