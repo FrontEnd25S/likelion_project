@@ -1,35 +1,102 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기숙사별 특징</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기숙사별 특징</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .info-card a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    </header>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>1학년 기숙사 추천</h2>
-        <p>어디 살까?</p>
-        <ul>
-            <li><a href="../housingInfo/bH.html">Brittany Hall</a></li>
-            <li><a href="../housingInfo/pC.html">Paulson Center</a></li>
-            <li><a href="../housingInfo/wH.html">WeinStein Hall</a></li>
-            <li><a href="../housingInfo/tN.html"> Third North</a></li>
-            <li><a href="../housingInfo/rH.html"> Rubin Hall</a></li>
-            <li><a href="../housingInfo/fH.html"> Founders Hall</a></li>
-            <li><a href="../housingInfo/lH.html"> Lipton Hall</a></li>
-        </ul>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>1학년 기숙사 추천</h2>
+    <p>어디 살까?</p>
+  </section>
+
+  <!-- Dorm List -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li><a href="../housingInfo/bH.html">Brittany Hall</a></li>
+        <li><a href="../housingInfo/pC.html">Paulson Center</a></li>
+        <li><a href="../housingInfo/wH.html">Weinstein Hall</a></li>
+        <li><a href="../housingInfo/tN.html">Third North</a></li>
+        <li><a href="../housingInfo/rH.html">Rubin Hall</a></li>
+        <li><a href="../housingInfo/fH.html">Founders Hall</a></li>
+        <li><a href="../housingInfo/lH.html">Lipton Hall</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Back to Main -->
+  <a href="../index.html" class="back-link" style="color: white;">← 메인으로 돌아가기</a>
+
+  <!-- Search Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>게시판 검색</h3>
+      <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br><br>
+      <input type="text" placeholder="게시판을 입력하세요!" id="search_input"><br><br>
+      <input type="submit" onclick="searchAndOpen();" value="검색" id="search_submit">
+    </div>
+  </section>
+  <script src="../search_press.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

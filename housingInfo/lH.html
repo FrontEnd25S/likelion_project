@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lipton Hall</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lipton Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #map-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../housingInfo/dR.html">NYU Community</a></h1>
 
-    <main>
-        <ul>
-            <li>
-                <img src="lH.jpg" alt="Lipton Hall" width="200">
-                 Lipton Hall
-            </li>
-        </ul>
-        <h3>특징</h3>
-        <ul>
-          <li>33 Washington Square West에 위치, 워싱턴 스퀘어 파크 바로 옆</li>
-          <li>약 700명의 1학년 학생 수용</li>
-         <li>수업, 도서관, Kimmel Center 등 주요 시설과 가까움</li>
-          <li>장점: 최상의 위치로 캠퍼스 접근성 뛰어남, 깔끔한 시설과 다양한 편의시설</li>
-          <li>단점: 카페테리아 밥 별로, 작은 방 크기</li>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
 
-        </ul>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3879704136525!2d-74.00191122371231!3d40.73148783642188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599143d2c8a3%3A0x79879388ac5a6494!2sLipton%20Hall!5e0!3m2!1sen!2sus!4v1745345296577!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../housingInfo/dR.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Lipton Hall</h2>
+    <p>워싱턴 스퀘어 파크 바로 옆 최고의 위치를 자랑하는 기숙사</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <img src="lH.jpg" alt="Lipton Hall" />
+      <h3>특징</h3>
+      <ul>
+        <li>📍 33 Washington Square West에 위치</li>
+        <li>👥 약 700명의 1학년 학생 수용</li>
+        <li>📚 수업, 도서관, Kimmel Center 등 주요 시설과 가까움</li>
+        <li>✅ 장점: 최상의 위치, 깔끔한 시설, 다양한 편의시설</li>
+        <li>⚠️ 단점: 카페테리아 음식 퀄리티, 작은 방 크기</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3879704136525!2d-74.00191122371231!3d40.73148783642188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599143d2c8a3%3A0x79879388ac5a6494!2sLipton%20Hall!5e0!3m2!1sen!2sus!4v1745345296577!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../housingInfo/dR.html" class="back-link" style="color:white">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

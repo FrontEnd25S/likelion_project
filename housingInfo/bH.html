@@ -1,36 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brittany Hall</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brittany Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #map-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      text-align: center;
+      display: block;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../housingInfo/dR.html">NYU Community</a></h1>
 
-    <main>
-        <ul>
-            <li>
-                <img src="bH.jpg" alt="Brittany Hall" width="200">
-                Brittany Hall
-            </li>
-        </ul>
-        <h3>특징</h3>
-        <ul>
-           <li>주소: Broadway와 East 10th Street의 코너에 위치</li>
-           <li>워싱턴 스퀘어 파크에서 약 0.3마일(0.5km) 거리로 캠퍼스와 가까움</li>
-           <li>약 579명의 1학년 학생들이 거주하며, 다양한 커뮤니티 활동 제공</li>
-           <li>장점: 최근 리노베이션으로 깨끗한 시설과 현대적 편의성 제공</li>
-           <li>단점: 교회 종소리가 들릴 수 있음, 식당이 없음</li> 
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
 
-        </ul>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.363168527365!2d-73.99430782354443!3d40.732033671390575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259997f684a19%3A0x1548293b9a87a001!2sBrittany%20Hall!5e0!3m2!1sen!2sus!4v1742953128842!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../housingInfo/dR.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Brittany Hall</h2>
+    <p>NYU 1학년 학생들이 가장 많이 거주하는 인기 기숙사 중 하나</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <img src="bH.jpg" alt="Brittany Hall" />
+      <h3>특징</h3>
+      <ul>
+        <li>📍 주소: Broadway와 East 10th Street의 코너에 위치</li>
+        <li>📌 워싱턴 스퀘어 파크에서 약 0.3마일(0.5km) 거리</li>
+        <li>👥 약 579명의 1학년 학생들이 거주, 다양한 커뮤니티 활동 제공</li>
+        <li>✅ 장점: 깨끗한 시설, 최근 리노베이션, 현대적 편의성</li>
+        <li>⚠️ 단점: 교회 종소리, 식당 없음</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <div id="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.363168527365!2d-73.99430782354443!3d40.732033671390575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259997f684a19%3A0x1548293b9a87a001!2sBrittany%20Hall!5e0!3m2!1sen!2sus!4v1742953128842!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../housingInfo/dR.html" class="back-link" style="color: white;" >← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

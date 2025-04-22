@@ -1,35 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weinstein Hall</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weinstein Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #map-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../housingInfo/dR.html">NYU Community</a></h1>
 
-    <main>
-        <ul>
-            <li>
-                <img src="wH.jpg" alt="Weinstein Hall" width="200">
-                 Weinstein Hall
-            </li>
-        </ul>
-        <h3>특징</h3>
-        <ul>
-          <li>5 University Place에 위치, 워싱턴 스퀘어 파크 북동쪽 모서리 근처</li>
-          <li>약 600명의 1학년 학생 수용</li>
-          <li>두 개의 타워로 구성된 9층 건물</li>
-          <li>주로 2인실과 3인실로 구성, 일부 1인실 제공</li>
-          <li>장점: 건물 내 여러 식당 옵션 (Downstein, Upstein Food Court, Kosher 식당), 캠퍼스와 매우 가까운 위치</li>
-          <li>단점:오래된 시설,작은 방 크기</li>
-        </ul>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.628407482447!2d-74.01352006939739!3d40.73106679100565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990a01259e9%3A0xcaad2ffc32fb81de!2sWeinstein%20Hall!5e0!3m2!1sen!2sus!4v1745345510103!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../housingInfo/dR.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Weinstein Hall</h2>
+    <p>캠퍼스 중심에 위치한 다이닝 중심 기숙사</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <img src="wH.jpg" alt="Weinstein Hall" />
+      <h3>특징</h3>
+      <ul>
+        <li>📍 5 University Place, 워싱턴 스퀘어 북동쪽 모서리</li>
+        <li>👥 약 600명의 1학년 학생 수용</li>
+        <li>🏢 두 개의 타워로 구성된 9층 건물</li>
+        <li>🛏️ 주로 2인/3인실, 일부 1인실 포함</li>
+        <li>✅ 장점: 건물 내 식당(Downstein, Upstein, Kosher), 위치 매우 좋음</li>
+        <li>⚠️ 단점: 오래된 시설, 작은 방 크기</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.628407482447!2d-74.01352006939739!3d40.73106679100565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990a01259e9%3A0xcaad2ffc32fb81de!2sWeinstein%20Hall!5e0!3m2!1sen!2sus!4v1745345510103!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../housingInfo/dR.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

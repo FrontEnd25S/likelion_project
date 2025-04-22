@@ -1,37 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubin Hall</title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rubin Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #map-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../housingInfo/dR.html">NYU Community</a></h1>
 
-    <main>
-        <ul>
-            <li>
-                <img src="rH.jpg" alt="Rubin Hall" width="200">
-                Rubin Hall
-            </li>
-        </ul>
-        <h3>특징</h3>
-        <ul>
-          <li>35 5th Avenue에 위치, 캠퍼스 중심에서 5분 거리</li>
-          <li>17층 건물로 680명의 1학년 학생 수용</li>
-          <li>1920년대에 호텔로 지어져 1964년 NYU가 구입</li>
-          <li>전체 건물에 에어컨 설치 및 가구 교체 (2024 Fall renovated)</li>
-          <li>장점:비교적 저렴한 기숙사 옵션, 상대적으로 넓은 방</li>
-          <li>단점:카페테리아 밥 별로, 상대적으로 오래된 시설들</li>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
 
-        </ul>
-        <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5949817466235!2d-74.00016032371244!3d40.726931736700955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599766d4142f%3A0x10b333773e583f41!2sRubin%20Hall!5e0!3m2!1sen!2sus!4v1745345428166!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../housingInfo/dR.html">← 메인으로 돌아가기</a>
-    </main>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Rubin Hall</h2>
+    <p>역사 깊은 고전적 건축 양식과 최근 리노베이션이 공존하는 기숙사</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <img src="rH.jpg" alt="Rubin Hall" />
+      <h3>특징</h3>
+      <ul>
+        <li>📍 35 5th Avenue에 위치, 캠퍼스 중심에서 도보 5분</li>
+        <li>🏢 17층 건물, 약 680명의 1학년 수용</li>
+        <li>🏨 1920년대 호텔 → 1964년 NYU 기숙사 전환</li>
+        <li>🔧 2024년 가구 전면 교체 및 에어컨 설치</li>
+        <li>✅ 장점: 저렴한 가격, 비교적 넓은 방</li>
+        <li>⚠️ 단점: 오래된 구조, 카페테리아 음식 퀄리티 낮음</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5949817466235!2d-74.00016032371244!3d40.726931736700955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599766d4142f%3A0x10b333773e583f41!2sRubin%20Hall!5e0!3m2!1sen!2sus!4v1745345428166!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../housingInfo/dR.html" class="back-link" style="color:white;">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
