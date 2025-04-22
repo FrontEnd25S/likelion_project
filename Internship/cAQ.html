@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commonly Asked Questions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commonly Asked Questions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 700px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .info-card li {
+      margin-bottom: 20px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../Internship/I.html">NYU Community</a></h1>
 
-    <main>
-        <h3>자주 물어보는 질문들</h3>
-         <ul>
-             <li>
-              <strong>1. 인턴십을 꼭 해야 하나요? 하지 않으면 불이익이 있나요?</strong><br>
-              꼭 필수는 아니지만, 실무 경험을 쌓는 좋은 기회입니다. 인턴 경험이 없다고 해서 큰 불이익이 있는 건 아니지만, 관련 경험이 있으면 이력서나 면접에서 유리할 수 있어요.
-             </li>
-             
-             <li>
-             <strong>2. 여름 인턴십을 못 구했을 때 대안은 무엇인가요?</strong><br>
-             온라인 자격증 취득, 대학교의 여름 연구 프로그램(RA), 개인 프로젝트나 오픈소스 기여 등도 훌륭한 경험이 됩니다.
-             </li>
-             
-            <li>
-            <strong>3. 미국 vs 한국 인턴십, 어떤 게 더 나은가요?</strong><br>
-            전공 관련된 일이라면 큰 차이는 없지만, 미국 내 취업을 희망한다면 미국 인턴 경험이 조금 더 도움이 될 수 있습니다.
-            </li>
-             
-            <li>
-            <strong>4. 무급 인턴도 괜찮은가요?</strong><br>
-            유급이면 좋지만, 무급 인턴도 충분히 의미 있습니다. 단, 경험의 질과 배울 수 있는 환경이 중요한 기준이 되어야 해요.
-            </li>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>자주 물어보는 질문들</h2>
+    <p>인턴십과 관련해 친구들이 가장 궁금해하는 질문들</p>
+  </section>
+
+  <!-- Q&A Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li>
+          <strong>1. 인턴십을 꼭 해야 하나요? 하지 않으면 불이익이 있나요?</strong><br>
+          꼭 필수는 아니지만, 실무 경험을 쌓는 좋은 기회입니다. 인턴 경험이 없다고 해서 큰 불이익이 있는 건 아니지만, 관련 경험이 있으면 이력서나 면접에서 유리할 수 있어요.
+        </li>
+        <li>
+          <strong>2. 여름 인턴십을 못 구했을 때 대안은 무엇인가요?</strong><br>
+          온라인 자격증 취득, 대학교의 여름 연구 프로그램(RA), 개인 프로젝트나 오픈소스 기여 등도 훌륭한 경험이 됩니다.
+        </li>
+        <li>
+          <strong>3. 미국 vs 한국 인턴십, 어떤 게 더 나은가요?</strong><br>
+          전공 관련된 일이라면 큰 차이는 없지만, 미국 내 취업을 희망한다면 미국 인턴 경험이 조금 더 도움이 될 수 있습니다.
+        </li>
+        <li>
+          <strong>4. 무급 인턴도 괜찮은가요?</strong><br>
+          유급이면 좋지만, 무급 인턴도 충분히 의미 있습니다. 단, 경험의 질과 배울 수 있는 환경이 중요한 기준이 되어야 해요.
+        </li>
       </ul>
-        
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../Internship/I.html">← 메인으로 돌아가기</a>
-    </main>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../Internship/I.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

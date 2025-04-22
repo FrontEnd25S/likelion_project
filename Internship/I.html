@@ -1,32 +1,120 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>인터십 정보 보음</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>인터십 정보 모음</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .info-card ul {
+      padding-left: 20px;
+    }
+
+    .info-card li {
+      margin-bottom: 15px;
+    }
+
+    .info-card a {
+      color: #5a189a;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    section {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>인터십 정보 보음</h2>
-        <p>인턴십은 많은데 뭘 신청 할수있는 거지? 여기로 와</p>
-        <ul>
-            <li><a href="../Internship/all.html">All Grades</a></li>
-            <li><a href="../Internship/cAQ.html">Commonly Asked Questions</a></li>
-        </ul>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>인터십 정보 모음</h2>
+    <p>인턴십은 많은데 뭘 신청할 수 있는 거지? 여기서 시작하세요!</p>
+  </section>
+
+  <!-- Info Links -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li><a href="../Internship/all.html">All Grades – 인턴십 리스트</a></li>
+        <li><a href="../Internship/cAQ.html">Commonly Asked Questions – 자주 묻는 질문</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../index.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Search Section -->
+  <section>
+    <h3>게시판 검색</h3>
+    <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
+    <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
+    <input type="submit" onclick="searchAndOpen();" value="검색" id="search_submit"><br>
+    <script src="../search_press.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
-
