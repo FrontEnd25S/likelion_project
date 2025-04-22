@@ -34,13 +34,21 @@ h1 img {
 
 /* Hero section */
 #hero {
-    background-image: url('Header_Image.jpg'); /* Add your campus image path here */
+    background-image: url('nyuLogo.jpg'); /* or 'Header_Image.jpg' */
     background-size: cover;
     background-position: center;
-    color:white;
-    padding: 80px 20px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    margin: 0;
 }
+
 
 #hero h2 {
     font-size: 48px;
@@ -109,17 +117,8 @@ header img {
     height: 50px;
     margin-right: 10px;
   }
-  
-  #hero {
-    background-image: url('../images/nyu_wash_square.jpg'); /* your background image */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-  }
-  
-  footer {
+
+footer {
     background-color: #d2b4de;
     color: white;
     padding: 20px 0;
