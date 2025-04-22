@@ -1,33 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>수강신청 꿀팁</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>수강신청 꿀팁</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    section.search {
+      text-align: center;
+      margin: 40px 0;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    </header>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>수강신청 꿀팁</h2>
-        <p>효율적인 수강신청을 위해 미리 시간표를 짜두고, 수강신청 시작 전 로그인 상태를 확인하세요!</p>
-        <ul>
-            <li>인기 과목 빠르게 신청하기</li>
-            <li>수강 정원 가득 찼을 때 대처법</li>
-            <li>꿀 교양 추천</li>
-        </ul>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>수강신청 꿀팁</h2>
+    <p>효율적인 수강신청을 위해 미리 시간표를 짜두고, 수강신청 시작 전 로그인 상태를 확인하세요!</p>
+  </section>
+
+  <!-- Tip Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li>인기 과목 빠르게 신청하기</li>
+        <li>수강 정원 가득 찼을 때 대처법</li>
+        <li>꿀 교양 추천</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <p style="text-align: center;">
+    <a href="../index.html" style="color: white;">← 메인으로 돌아가기</a>
+  </p>
+
+  <!-- Search Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>게시판 검색</h3>
+      <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br><br>
+      <input type="text" placeholder="게시판을 입력하세요!" id="search_input"><br><br>
+      <input type="submit" onclick="searchAndOpen();" value="검색" id="search_submit">
+    </div>
+  </section>
+  <script src="../search_press.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
