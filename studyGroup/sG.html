@@ -1,32 +1,121 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스터디 그룹</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스터디 그룹</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .info-card ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .info-card li {
+      margin: 15px 0;
+    }
+
+    .info-card a {
+      color: #5a189a;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    section {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    </header>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>스터디 그룹</h2>
-        <p>공부는 같이 하면 능률이 올라가죠! 스터디 그룹을 개설하여 같이 공부해요!</p>
-        <ul>
-           <li><a href="https://forms.gle/VnUwL5VM8bDsYDaY7">스터디 그룹 신청 링크</a></li>
-            <li><a href="https://docs.google.com/document/d/1aq6nTpI1ZQcZrknRuEE8OWj5CerVh82zp8760T8YSNc/edit?usp=sharing">스터디 그룹 규칙</a></li>
-        </ul>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>스터디 그룹</h2>
+    <p>공부는 같이 하면 능률이 올라가죠! 스터디 그룹을 개설해서 같이 공부해요!</p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li><a href="https://forms.gle/VnUwL5VM8bDsYDaY7" target="_blank">스터디 그룹 신청 링크</a></li>
+        <li><a href="https://docs.google.com/document/d/1aq6nTpI1ZQcZrknRuEE8OWj5CerVh82zp8760T8YSNc/edit?usp=sharing" target="_blank">스터디 그룹 규칙</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../index.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Search Section -->
+  <section>
+    <h3>게시판 검색</h3>
+    <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
+    <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
+    <input type="submit" onclick="searchAndOpen();" value="검색" id="search_submit"><br>
+    <script src="../search_press.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
