@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>네트워킹 이벤트</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네트워킹 이벤트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 700px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .info-card li {
+      margin-bottom: 20px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    section {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../index.html">NYU Community</a></h1>
-    <script src="../project_js.js"></script>
-    <main>
-        <h2>네트워킹 이벤트</h2>
-              <ul>
-             <li>
-              <strong>1. 네트워킹은 어떻게 하나요?</strong><br>
-              NYU 공식 네트워킹 행사의 경우 Wasserman Center에서 보내주는 이메일을 통해 알수 있습니다.
-             </li>
-            
-             <li>
-             <strong>2.한국인 학생들을 위한 네트워킹 행사가 있나요?</strong><br>
-             네, KISO는 매년 4월, Kohbs는 12월에 Alumni Night을 개최하여 졸업생들과의 만남을 주선하고, 다양한 조언을 얻을 수 있는 기회를 제공합니다.
-             </li>
-             
-            <li>
-            <strong>3.위의 방법외에는 어떤 방법이 있나요?</strong><br>
-            NYU에는 다양한 club들이 존재하는데, 클럽별로 학기 중에 다양한 대기업에 종사하시는 분들을 초청해서 Career Talk과 네트워킹 행사 기회가 주어집니다.
-            </li>
-      </ul>
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../index.html">← 메인으로 돌아가기</a>
-    </main>
 
-    <section>
-        <h3>게시판 검색</h3>
-        <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
-        <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
-        <input type="submit" onclick="searchAndOpen();"value="검색" id="search_submit"><br>
-        <script src = "../search_press.js"></script>
-    </section>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>네트워킹 이벤트</h2>
+    <p>실제 경험자들과의 연결을 통해 더 넓은 기회를 만나보세요.</p>
+  </section>
+
+  <!-- Main Q&A Content -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li>
+          <strong>1. 네트워킹은 어떻게 하나요?</strong><br>
+          NYU 공식 네트워킹 행사의 경우 Wasserman Center에서 보내주는 이메일을 통해 알 수 있습니다.
+        </li>
+        <li>
+          <strong>2. 한국인 학생들을 위한 네트워킹 행사가 있나요?</strong><br>
+          네, KISO는 매년 4월, Kohbs는 12월에 Alumni Night을 개최하여 졸업생들과의 만남을 주선하고, 다양한 조언을 얻을 수 있는 기회를 제공합니다.
+        </li>
+        <li>
+          <strong>3. 위의 방법 외에는 어떤 방법이 있나요?</strong><br>
+          NYU에는 다양한 club들이 존재하며, 클럽별로 학기 중 대기업 종사자를 초청해 Career Talk과 네트워킹 행사를 진행합니다.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../index.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Search Section -->
+  <section>
+    <h3>게시판 검색</h3>
+    <label for="search_input">게시판의 정확한 이름으로 검색해주세요!</label><br>
+    <input type="text" placeholder="게시판을 입력하세요!" id="search_input">
+    <input type="submit" onclick="searchAndOpen();" value="검색" id="search_submit"><br>
+    <script src="../search_press.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

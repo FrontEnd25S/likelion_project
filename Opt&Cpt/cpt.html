@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commonly Asked Questions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commonly Asked Questions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 700px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .info-card li {
+      margin-bottom: 20px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../Opt&Cpt/O&C.html">NYU Community</a></h1>
 
-    <main>
-        <h3>CPT 관련 질문</h3>
-         <ul>
-             <li>
-              <strong>1. CPT가 무엇인가요?</strong><br>
-              CPT는 Curricular Practical Training의 약자로 대학교에 재학중인 international 학생들은 위한 internship 지원 제도 입니다.
-             </li>
-             
-             <li>
-             <strong>2. CPT는 언제 부터 할수있나?</strong><br>
-             CPT의 경우 1학년 이상 수료후 재학기간 최대 12개월동안 진행 할수있습니다. 그러나 반드시 전공과 관련된 인턴십이어야 합니다.
-             </li>
-             
-            <li>
-            <strong>3. 어떻게 신청하나요?</strong><br>
-            CPT의 경우 학교 별 DSO나 OGS에 CPT를 신청하면 2~3주 안에 허가를 해주고 그후에 인턴을 진행할수있습니다.
-            </li>
-             
-            <li>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>CPT 관련 질문</h2>
+    <p>국제 학생들을 위한 Curricular Practical Training 안내</p>
+  </section>
+
+  <!-- Q&A Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li>
+          <strong>1. CPT가 무엇인가요?</strong><br>
+          CPT는 Curricular Practical Training의 약자로, 대학교에 재학 중인 international 학생들을 위한 internship 제도입니다.
+        </li>
+        <li>
+          <strong>2. CPT는 언제부터 할 수 있나요?</strong><br>
+          CPT는 1학년 이상 수료 후 재학 중 최대 12개월까지 진행할 수 있으며, 전공과 관련된 인턴십이어야 합니다.
+        </li>
+        <li>
+          <strong>3. 어떻게 신청하나요?</strong><br>
+          학교별 DSO나 OGS를 통해 신청하며, 보통 2~3주 내로 허가가 나며 이후 인턴을 진행할 수 있습니다.
+        </li>
       </ul>
-        
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../Opt&Cpt/O&C.html">← 메인으로 돌아가기</a>
-    </main>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../Opt&Cpt/O&C.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>

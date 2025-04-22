@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commonly Asked Questions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPT 관련 질문</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .info-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .info-card {
+      background-color: #f4ebfe;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      width: 700px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .info-card li {
+      margin-bottom: 20px;
+    }
+
+    #like {
+      font-size: 24px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #d2b4de;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <h1><a href="../Opt&Cpt/O&C.html">NYU Community</a></h1>
 
-    <main>
-        <h3>OPT 관련 질문</h3>
-         <ul>
-             <li>
-              <strong>1. OPT가 무엇인가요?</strong><br>
-              OPT는 Optional Practical Training의 약자로 대학교를 졸업한 international 학생들에게 실무 경험을 주기 위한 internship 지원 제도 입니다.
-             </li>
-             
-             <li>
-             <strong>2. OPT는 언제 부터 할수있나?</strong><br>
-             OPT의 경우 주로 대학 졸업후 최대 12개월동안 진행 할수있고, STEM 전공의 경우 2년 연장이 가능하여 총 3년간 일이 가능합니다. 그러나 반드시 전공과 관련된 인턴십이어야 합니다.
-             </li>
-             
-            <li>
-            <strong>3. 어떻게 신청하나요?</strong><br>
-            OPT의 경우 USCIS에 I-765 Form을 제출해야하는데 최소 90일 이전에 신청해야 여유있게 인턴십을 진행 할수 있습니다.
-            </li>
-             
-            <li>
+  <!-- Header -->
+  <header>
+    <img src="../logo.png" alt="NYU 로고" style="height: 50px; margin-right: 10px;">
+    <h1><a href="../index.html">NYU Community</a></h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>OPT 관련 질문</h2>
+    <p>졸업 후 인턴십이나 취업을 준비 중이라면 꼭 확인하세요!</p>
+  </section>
+
+  <!-- Q&A Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <ul>
+        <li>
+          <strong>1. OPT가 무엇인가요?</strong><br>
+          OPT는 Optional Practical Training의 약자로, 대학교를 졸업한 international 학생들에게 실무 경험을 제공하기 위한 internship 지원 제도입니다.
+        </li>
+        <li>
+          <strong>2. OPT는 언제부터 할 수 있나요?</strong><br>
+          보통 대학 졸업 후 최대 12개월까지 진행할 수 있으며, STEM 전공자의 경우 2년 연장이 가능해 총 3년까지 근무가 가능합니다. 단, 전공과 관련된 업무여야 합니다.
+        </li>
+        <li>
+          <strong>3. 어떻게 신청하나요?</strong><br>
+          USCIS에 I-765 Form을 제출해야 하며, 최소 90일 이전에 신청하는 것이 좋습니다. 이 과정을 통해 인턴십을 원활히 시작할 수 있습니다.
+        </li>
       </ul>
-        
-        <button id="like">👍</button>
-        <script src="../liked.js"></script><br>
-        <a href="../Opt&Cpt/O&C.html">← 메인으로 돌아가기</a>
-    </main>
+    </div>
+  </section>
+
+  <!-- Like Button -->
+  <button id="like">👍</button>
+  <script src="../liked.js"></script>
+
+  <!-- Back Link -->
+  <a href="../Opt&Cpt/O&C.html" class="back-link">← 메인으로 돌아가기</a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NYU Community
+  </footer>
+
 </body>
 </html>
